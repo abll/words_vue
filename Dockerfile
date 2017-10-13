@@ -19,10 +19,10 @@ RUN npm install -g yarn
 EXPOSE 3000
 
 # Make An Application Folder
-RUN mkdir /safar
+RUN mkdir /words_vue
 
 # Make An App Directory For Safar
-WORKDIR /safar
+WORKDIR /words_vue
 
 # Copy Local Directory Into Container
 COPY . .

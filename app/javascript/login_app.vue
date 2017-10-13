@@ -1,9 +1,17 @@
 <template>
     <div id="login">
-        <label>Username:<input type="text"></input></label>
-        <label>password:<input type="text"></input></label>
-        <button>Login</button>
-        <br>
-        <a>New User</a>
+        <label for="user">Username:</label><input type="text"><br>
+        <label for="password">Password:</label><input type="text"></label><br>
+        <button>Login</button> 
+        <a href="#new">New User</a>
     </div>
 </template>
+
+<script>
+    export default {
+        name: 'Login',
+        data: function () {
+            return {}
+        }
+    }
+</script>

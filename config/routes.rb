@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
-  get 'users/login'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get "users/login"
+
+  # Could Be Improved by using resources
+  get 'signup', to: 'users#new', as: 'signup'
+  post 'signup', to: 'users#create' 
+  get 'login', to: 'sessions#new', as: 'login'
+  get 'logout', to: 'sessions#destroy', as: 'logout'
+
 end

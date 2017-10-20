@@ -2,8 +2,45 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 label{
     font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     font-size: larger;
+}
+
+//This is an attempt to understand the css grid
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    grid-auto-columns: minmax(25px, 200px); 
+    grid-auto-rows: minmax(25px, auto);
+}
+
+.one{
+    grid-column: 2/3;
+    grid-row: 1;
+}
+.two{
+
+    grid-column: 3/3;
+    grid-row: 1;
+}
+.three{
+    grid-column: 2/3;
+    grid-row: 2;
+}
+.four{
+    grid-column: 3/4;
+    grid-row: 2;
+}
+.five{
+    grid-column: 3/4;
+    grid-row: 3;
+}
+.six{
+    grid-column: 4/4;
+    grid-row: 3
 }

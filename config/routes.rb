@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'words/index'
+
   get "users/login"
 
   # Could Be Improved by using resources

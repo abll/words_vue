@@ -19,7 +19,7 @@ development:
   encoding: unicode
   database: words_fe
   host: localhost
-  port: 5432
+  port: 5434
   pool: 4
   username: wordsuser
   password: helloworld
